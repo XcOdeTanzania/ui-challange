@@ -1,10 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:ui_challenge/Model/user.dart';
-import 'package:ui_challenge/profile.dart';
-import 'package:ui_challenge/profle2.dart';
-
-import 'avocado.dart';
+import 'package:ui_challenge/uis/avocado.dart';
+import 'package:ui_challenge/uis/profile.dart';
+import 'package:ui_challenge/uis/profle2.dart';
 
 class DrawerPage extends StatefulWidget {
   @override
