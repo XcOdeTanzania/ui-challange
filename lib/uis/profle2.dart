@@ -52,21 +52,7 @@ class ProfileTwoPage extends StatelessWidget {
         ),
         preferredSize: Size(MediaQuery.of(context).size.width, 150.0),
       ),
-      // appBar: AppBar(
-
-      //   elevation: 0,
-      //   backgroundColor: Colors.,
-      //   actions: <Widget>[r
-      //     IconButton(
-      //       icon: Icon(Icons.notifications),
-      //       onPressed: () {},
-      //     ),
-      //     IconButton(
-      //       icon: Icon(Icons.menu),
-      //       onPressed: () {},
-      //     )
-      //   ],
-      // ),
+    
       body: Stack(
         children: <Widget>[
           Container(

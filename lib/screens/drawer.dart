@@ -2,8 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:ui_challenge/Model/user.dart';
 import 'package:ui_challenge/uis/avocado.dart';
+import 'package:ui_challenge/uis/color_changer.dart';
 import 'package:ui_challenge/uis/profile.dart';
 import 'package:ui_challenge/uis/profle2.dart';
+import 'package:ui_challenge/uis/whatsapp.dart';
 
 class DrawerPage extends StatefulWidget {
   @override
@@ -150,6 +152,35 @@ class _DrawerPageState extends State<DrawerPage> with TickerProviderStateMixin {
                                       MaterialPageRoute(
                                           builder: ((BuildContext context) =>
                                               ProfileTwoPage())));
+                                },
+                              ),
+                              ListTile(
+                                leading: Icon(
+                                  FontAwesomeIcons.user,
+                                  color: Color(0xffff8363),
+                                ),
+                                title: Text('Color Changer'),
+                                onTap: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: ((BuildContext context) =>
+                                              ColorChanger())));
+                                },
+                              ),
+                              Divider(),
+                              ListTile(
+                                leading: Icon(
+                                  FontAwesomeIcons.user,
+                                  color: Color(0xffff8363),
+                                ),
+                                title: Text('WhatsApp'),
+                                onTap: () {
+                                  Navigator.push(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: ((BuildContext context) =>
+                                              WhatsApp())));
                                 },
                               ),
                               Divider()
