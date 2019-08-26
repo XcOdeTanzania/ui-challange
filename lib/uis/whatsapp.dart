@@ -81,7 +81,7 @@ class _WhatsAppState extends State<WhatsApp> {
                     child: Padding(
                       padding: const EdgeInsets.only(bottom: 80, right: 10),
                       child: AnimatedContainer(
-                        color: Colors.red,
+                        
                         height: 300,
                         width: 70,
                         duration: Duration(milliseconds: 30),
