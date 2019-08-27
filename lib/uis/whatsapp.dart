@@ -81,26 +81,29 @@ class _WhatsAppState extends State<WhatsApp> {
                     child: Padding(
                       padding: const EdgeInsets.only(bottom: 80, right: 10),
                       child: AnimatedContainer(
-                        
-                        height: 300,
+                        height: _showMoreOption ? 300 : 0,
                         width: 70,
                         duration: Duration(milliseconds: 30),
                         child: Column(
                           mainAxisAlignment: MainAxisAlignment.spaceBetween,
                           children: <Widget>[
                             FloatingActionButton(
+                              backgroundColor: Colors.teal[800],
                               onPressed: () {},
                               child: Icon(Icons.message),
                             ),
                             FloatingActionButton(
+                              backgroundColor: Colors.teal[800],
                               onPressed: () {},
                               child: Icon(Icons.timer_off),
                             ),
                             FloatingActionButton(
+                              backgroundColor: Colors.teal[800],
                               onPressed: () {},
                               child: Icon(FontAwesomeIcons.file),
                             ),
                             FloatingActionButton(
+                              backgroundColor: Colors.teal[800],
                               onPressed: () {},
                               child: Icon(Icons.flag),
                             )
@@ -119,6 +122,7 @@ class _WhatsAppState extends State<WhatsApp> {
           ],
         ),
         floatingActionButton: FloatingActionButton(
+          backgroundColor: Colors.teal[800],
           child: Icon(_showMoreOption ? Icons.close : Icons.add),
           onPressed: () {
             setState(() {
