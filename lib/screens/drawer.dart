@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:ui_challenge/Model/user.dart';
+import 'package:ui_challenge/projects/dotify/launch_screen.dart';
 import 'package:ui_challenge/uis/avocado.dart';
 import 'package:ui_challenge/uis/color_changer.dart';
 import 'package:ui_challenge/uis/profile.dart';
@@ -181,6 +182,22 @@ class _DrawerPageState extends State<DrawerPage> with TickerProviderStateMixin {
                                       MaterialPageRoute(
                                           builder: ((BuildContext context) =>
                                               WhatsApp())));
+                                },
+                              ),
+                              Divider(),
+                              ListTile(
+                                leading: Container(
+                                  height: 30,
+                                  child: Image.asset(
+                                    'assets/dotify/icons/dotify_icon@3x.png',
+                                  ),
+                                ),
+                                onTap: () {
+                                  Navigator.pushReplacement(
+                                      context,
+                                      MaterialPageRoute(
+                                          builder: ((BuildContext context) =>
+                                              LaunchScreen())));
                                 },
                               ),
                               Divider()
