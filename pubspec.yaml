@@ -55,7 +55,17 @@ flutter:
     - assets/img/qlicue.jpg
 
     - assets/dotify/icons/dotify_icon@3x.png
+    - assets/dotify/icons/dotify_icon.png
+    - assets/dotify/icons/back_btn.png
+    - assets/dotify/icons/email_icon.png
+    - assets/dotify/icons/menu_btn.png
+    - assets/dotify/icons/dob_icon.png
+    - assets/dotify/icons/password_icon.png
+    - assets/dotify/icons/username_icon.png
+    - assets/dotify/icons/search_btn.png
+
     - assets/dotify/img/background.png
+
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
   # For details regarding adding assets from package dependencies, see

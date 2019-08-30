@@ -1,6 +1,7 @@
 import 'dart:ui';
 
 import 'package:flutter/material.dart';
+import 'package:ui_challenge/projects/dotify/sign_up_screen.dart';
 
 import 'login_screen.dart';
 
@@ -59,9 +60,9 @@ class LaunchScreen extends StatelessWidget {
                 children: <Widget>[
                   Expanded(
                     child: FlatButton(
-                      child: Text('LOG IN'),
+                      child: Text('LOG IN', style: TextStyle( fontSize: 25),),
                       onPressed: () {
-                        Navigator.pushReplacement(
+                        Navigator.push(
                             context,
                             MaterialPageRoute(
                                 builder: ((BuildContext context) =>
@@ -76,9 +77,15 @@ class LaunchScreen extends StatelessWidget {
                         color: Color(0xffE55F2C),
                         child: Text(
                           'SIGN UP',
-                          style: TextStyle(color: Colors.white),
+                          style: TextStyle(color: Colors.white, fontSize: 25),
                         ),
-                        onPressed: () {},
+                        onPressed: () {
+                           Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: ((BuildContext context) =>
+                                    SignUpScreen())));
+                        },
                       ),
                     ),
                   ),
