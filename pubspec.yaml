@@ -62,30 +62,50 @@ flutter:
     - assets/dotify/icons/dob_icon.png
     - assets/dotify/icons/password_icon.png
     - assets/dotify/icons/username_icon.png
+    - assets/dotify/icons/view_album_btn.png
     - assets/dotify/icons/search_btn.png
+    - assets/dotify/icons/pause_btn.png
+    - assets/dotify/icons/pop_mic_icon.png
+    - assets/dotify/icons/radio_icon.png
+    - assets/dotify/icons/music_library_icon.png
+    - assets/dotify/icons/rock_fire_icon.png
+    - assets/dotify/icons/music_info.png
+    - assets/dotify/icons/dismiss_music.png
+
+    - assets/dotify/icons/songs_btn.png
+    - assets/dotify/icons/playlists_btn.png
+    - assets/dotify/icons/album_btn.png
+    - assets/dotify/icons/artists_btn.png
+    - assets/dotify/icons/share_music_btn.png
+    - assets/dotify/icons/heart_song_btn.png
+    - assets/dotify/icons/play_artist_btn.png
+    - assets/dotify/icons/more_info_btn.png
+    - assets/dotify/icons/favorite_song_btn.png
+    - assets/dotify/icons/play_btn.png
+    - assets/dotify/icons/play_btn_pop_up.png
+    - assets/dotify/icons/repeat_btn.png
+    - assets/dotify/icons/shuffle_btn.png
+    - assets/dotify/icons/rewind_btn.png
+    - assets/dotify/icons/fastforward_btn.png
+    - assets/dotify/icons/speaker.png
 
     - assets/dotify/img/background.png
+    - assets/dotify/img/avatar.png
+    - assets/dotify/img/album_cover.png
+    - assets/dotify/img/cover_song.png
+    - assets/dotify/img/playing_now_background.png
 
-  # An image asset can refer to one or more resolution-specific "variants", see
-  # https://flutter.dev/assets-and-images/#resolution-aware.
-  # For details regarding adding assets from package dependencies, see
-  # https://flutter.dev/assets-and-images/#from-packages
-  # To add custom fonts to your application, add a fonts section here,
-  # in this "flutter" section. Each entry in this list should have a
-  # "family" key with the font family name, and a "fonts" key with a
-  # list giving the asset and other descriptors for the font. For
-  # example:
-  # fonts:
-  #   - family: Schyler
-  #     fonts:
-  #       - asset: fonts/Schyler-Regular.ttf
-  #       - asset: fonts/Schyler-Italic.ttf
-  #         style: italic
-  #   - family: Trajan Pro
-  #     fonts:
-  #       - asset: fonts/TrajanPro.ttf
-  #       - asset: fonts/TrajanPro_Bold.ttf
-  #         weight: 700
+  fonts:
+    - family: Anton
+      fonts:
+        - asset: assets/dotify/fonts/Anton-Regular.ttf
+
+    - family: Roboto
+      fonts:
+        - asset: assets/dotify/fonts/Roboto-Bold.ttf
+        - asset: assets/dotify/fonts/Roboto-Regular.ttf
+        - asset: assets/dotify/fonts/Roboto-light.ttf
+          weight: 700
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

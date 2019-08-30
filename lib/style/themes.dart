@@ -12,6 +12,10 @@ class Colors {
   static const Color dotifySecondaryColor = const Color(0x75e55F2c);
   static const Color dotifyTertiaryColor = const Color(0xFFffc0cb);
   static const Color dotifyFacebook = const Color(0xFF334f8d);
+  static const Color dotifytextColorOne = const Color(0xFF5E5E5E);
+  static const Color dotifytextColorTwo = const Color(0xFF404040);
+
+  //404040
 
   static const prmaryGradient = const LinearGradient(
       colors: const [loginGradientStart, loginGradientEnd],
