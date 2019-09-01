@@ -25,6 +25,7 @@ dependencies:
   cupertino_icons: ^0.1.2
   font_awesome_flutter: ^8.5.0
   flutter_launcher_icons: ^0.7.2+1
+  scoped_model: ^1.0.1
 
 dev_dependencies:
   flutter_test:
@@ -71,6 +72,8 @@ flutter:
     - assets/dotify/icons/rock_fire_icon.png
     - assets/dotify/icons/music_info.png
     - assets/dotify/icons/dismiss_music.png
+    - assets/dotify/icons/browse_icon.png
+    - assets/dotify/icons/activity_icon.png
 
     - assets/dotify/icons/songs_btn.png
     - assets/dotify/icons/playlists_btn.png
@@ -82,6 +85,7 @@ flutter:
     - assets/dotify/icons/more_info_btn.png
     - assets/dotify/icons/favorite_song_btn.png
     - assets/dotify/icons/play_btn.png
+    - assets/dotify/icons/settings_btn.png
     - assets/dotify/icons/play_btn_pop_up.png
     - assets/dotify/icons/repeat_btn.png
     - assets/dotify/icons/shuffle_btn.png
@@ -94,6 +98,26 @@ flutter:
     - assets/dotify/img/album_cover.png
     - assets/dotify/img/cover_song.png
     - assets/dotify/img/playing_now_background.png
+    - assets/dotify/img/menu_cover.png
+    - assets/dotify/img/user_profile.png
+
+    - assets/dotify/img/acoustic.png
+    - assets/dotify/img/top_hits.png
+    - assets/dotify/img/viral.png
+    
+    - assets/dotify/img/pop.png
+    - assets/dotify/img/electronic.png
+    - assets/dotify/img/rock.png
+
+    - assets/dotify/img/1.png
+    - assets/dotify/img/2.png
+    - assets/dotify/img/3.png
+    - assets/dotify/img/4.png
+    - assets/dotify/img/5.png
+    - assets/dotify/img/6.png
+    - assets/dotify/img/7.png
+    - assets/dotify/img/8.png
+    
 
   fonts:
     - family: Anton
@@ -106,6 +130,10 @@ flutter:
         - asset: assets/dotify/fonts/Roboto-Regular.ttf
         - asset: assets/dotify/fonts/Roboto-light.ttf
           weight: 700
+
+    - family: AbrilFatface
+      fonts:
+        - asset: assets/dotify/fonts/AbrilFatface-Regular.ttf
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages

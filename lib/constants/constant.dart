@@ -1,1 +1,2 @@
-String homeScreen='/HomeScreen';
+String homeScreen = '/HomeScreen';
+String dotifyScreen = '/DotifyScreen';

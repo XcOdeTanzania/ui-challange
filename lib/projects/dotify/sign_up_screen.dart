@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:ui_challenge/constants/constant.dart';
 import 'package:ui_challenge/projects/dotify/background.dart';
-import 'package:ui_challenge/projects/dotify/browse_screen.dart';
+
 import 'package:ui_challenge/style/themes.dart' as dotifyColors;
 
 class SignUpScreen extends StatelessWidget {
@@ -23,7 +24,6 @@ class SignUpScreen extends StatelessWidget {
           ),
           title: Image.asset('assets/dotify/icons/dotify_icon.png'),
           elevation: 0,
-          
           backgroundColor: Colors.transparent,
         ),
         body: SingleChildScrollView(
@@ -135,11 +135,7 @@ class SignUpScreen extends StatelessWidget {
                       style: TextStyle(color: Colors.white, fontSize: 25),
                     ),
                     onPressed: () {
-                      Navigator.pushReplacement(
-                          context,
-                          MaterialPageRoute(
-                              builder: ((BuildContext context) =>
-                                  BrowseScreen())));
+                      Navigator.pushReplacementNamed(context, dotifyScreen);
                     },
                   ),
                 ),

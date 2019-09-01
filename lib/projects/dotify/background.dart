@@ -27,6 +27,7 @@ class Background extends StatelessWidget {
         child: BackdropFilter(
           child: scaffold,
           filter: ImageFilter.blur(sigmaX: sigmaX, sigmaY: sigmaY),
-        ));
+        )
+        );
   }
 }

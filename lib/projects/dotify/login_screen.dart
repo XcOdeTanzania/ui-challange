@@ -1,10 +1,16 @@
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:ui_challenge/constants/constant.dart';
 import 'package:ui_challenge/projects/dotify/background.dart';
-import 'package:ui_challenge/projects/dotify/browse_screen.dart';
+
 import 'package:ui_challenge/style/themes.dart' as dotifyColors;
 
-class LoginScreen extends StatelessWidget {
+class LoginScreen extends StatefulWidget {
+  @override
+  _LoginScreenState createState() => _LoginScreenState();
+}
+
+class _LoginScreenState extends State<LoginScreen> {
   @override
   Widget build(BuildContext context) {
     return Background(
@@ -12,10 +18,10 @@ class LoginScreen extends StatelessWidget {
         backgroundColor: Colors.transparent,
         appBar: AppBar(
           leading: InkWell(
-            onTap: (){
+            onTap: () {
               Navigator.pop(context);
             },
-                      child: Container(
+            child: Container(
               height: 10,
               width: 10,
               child: Image.asset('assets/dotify/icons/back_btn.png'),
@@ -26,11 +32,11 @@ class LoginScreen extends StatelessWidget {
           backgroundColor: Colors.transparent,
         ),
         body: SingleChildScrollView(
-                  child: Column(
+          child: Column(
             children: <Widget>[
-                SizedBox(
-                      height: 20,
-                    ),
+              SizedBox(
+                height: 20,
+              ),
               Row(
                 children: <Widget>[
                   Expanded(
@@ -87,10 +93,11 @@ class LoginScreen extends StatelessWidget {
                       padding: const EdgeInsets.all(10.0),
                       child: FlatButton(
                         child: Text(
-                        'Forgot your password',
-                        style: TextStyle(fontSize: 15, color: Color(0xff4A4A4A)),
-                      ),
-                      onPressed: (){},
+                          'Forgot your password',
+                          style:
+                              TextStyle(fontSize: 15, color: Color(0xff4A4A4A)),
+                        ),
+                        onPressed: () {},
                       ),
                     ),
                   ],
@@ -99,30 +106,26 @@ class LoginScreen extends StatelessWidget {
             ],
           ),
         ),
-      bottomNavigationBar: BottomAppBar(
-        child: Row(
-          children: <Widget>[
-            Expanded(
-              child: Container(
-                color: dotifyColors.Colors.dotifyPrimaryColor
-                
-                ,
-                child: FlatButton(
-                      child: Text('LOG IN',style: TextStyle(color: Colors.white, fontSize: 25),),
-                      onPressed: () {
-                        Navigator.pushReplacement(
-                            context,
-                            MaterialPageRoute(
-                                builder: ((BuildContext context) =>
-                                    BrowseScreen())));
-                      },
+        bottomNavigationBar: BottomAppBar(
+          child: Row(
+            children: <Widget>[
+              Expanded(
+                child: Container(
+                  color: dotifyColors.Colors.dotifyPrimaryColor,
+                  child: FlatButton(
+                    child: Text(
+                      'LOG IN',
+                      style: TextStyle(color: Colors.white, fontSize: 25),
                     ),
-              ),
-            )
-          ],
+                    onPressed: () {
+                      Navigator.pushReplacementNamed(context, dotifyScreen);
+                    },
+                  ),
+                ),
+              )
+            ],
+          ),
         ),
-      ),
-
       ),
       sigmaX: 10,
       sigmaY: 10,
