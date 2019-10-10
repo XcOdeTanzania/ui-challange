@@ -30,25 +30,33 @@ final Screen yourMusicScreen = new Screen(
                     mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                     children: <Widget>[
                       CateoryCard(
-                        image: 'assets/dotify/icons/artists_btn.png',
+                        image: model.selectedCategoryIndex == 0
+                            ? 'assets/dotify/icons/artists_btn.png'
+                            : 'assets/dotify/icons/artists_btn_white.png',
                         onTap: () {
                           model.setSelectedCategoryIndex(index: 0);
                         },
                       ),
                       CateoryCard(
-                        image: 'assets/dotify/icons/album_btn.png',
+                        image: model.selectedCategoryIndex == 1
+                            ? 'assets/dotify/icons/album_btn.png'
+                            : 'assets/dotify/icons/album_btn_white.png',
                         onTap: () {
                           model.setSelectedCategoryIndex(index: 1);
                         },
                       ),
                       CateoryCard(
-                        image: 'assets/dotify/icons/songs_btn.png',
+                        image: model.selectedCategoryIndex == 2
+                            ? 'assets/dotify/icons/songs_btn.png'
+                            : 'assets/dotify/icons/songs_btn_white.png',
                         onTap: () {
                           model.setSelectedCategoryIndex(index: 2);
                         },
                       ),
                       CateoryCard(
-                        image: 'assets/dotify/icons/playlists_btn.png',
+                        image: model.selectedCategoryIndex == 3
+                            ? 'assets/dotify/icons/playlists_btn.png'
+                            : 'assets/dotify/icons/playlists_btn_white.png',
                         onTap: () {
                           model.setSelectedCategoryIndex(index: 3);
                         },
@@ -76,7 +84,7 @@ final Screen yourMusicScreen = new Screen(
                                       builder: ((BuildContext context) =>
                                           ArtistScreen())));
                             },
-                            album: albums[index],
+                            album: artists[index],
                           )
                         : (model.selectedCategoryIndex == 1
                             ? AlbumTile(
@@ -102,7 +110,7 @@ final Screen yourMusicScreen = new Screen(
                                     },
                                   )
                                 : AlbumTile(
-                                    album: albums[index],
+                                    album: artists[index],
                                     onTap: () {
                                       Navigator.push(
                                           context,

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "708420725217",
+    "firebase_url": "https://dotify-c0555.firebaseio.com",
+    "project_id": "dotify-c0555",
+    "storage_bucket": "dotify-c0555.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:708420725217:android:4e7e2b03ca6685140a4aa0",
+        "android_client_info": {
+          "package_name": "com.example.ui_challenge"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "708420725217-q6db3iifkleda4ej06ig3o6jp6otp47a.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.ui_challenge",
+            "certificate_hash": "18a6ab1ac05e3a5260ac549f1766c8b0abbcb6e6"
+          }
+        },
+        {
+          "client_id": "708420725217-eonc1bidffsr9vi9ivrhrn1avr64r4c6.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBGj78XJQYS3cTUAQ1VI628IBZp6irL5sM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "708420725217-eonc1bidffsr9vi9ivrhrn1avr64r4c6.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

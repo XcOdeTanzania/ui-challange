@@ -3,6 +3,10 @@ import 'package:scoped_model/scoped_model.dart';
 
 mixin ConnectedDotifyModel on Model {}
 mixin UserModel on ConnectedDotifyModel {}
+mixin AlbumModel on ConnectedDotifyModel {}
+mixin SongModel on ConnectedDotifyModel {}
+mixin PlayListModel on ConnectedDotifyModel {}
+mixin ArtistModel on ConnectedDotifyModel {}
 mixin UtilityModel on ConnectedDotifyModel {
   int _selectedCategoryIndex = 0;
 
